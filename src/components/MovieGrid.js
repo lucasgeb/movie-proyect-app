@@ -16,11 +16,10 @@ export function MoviesGrid() {
   
   
   useEffect (() => {
-    const searchURL = search
+    const searchUrl = search
     ? "/search/movie?query=" + search 
     : "/discover/movie";
-    get(searchURL)
-      .then((data) => {
+    get(searchUrl).then((data) => {
         setMovies(data.results);
       });
 

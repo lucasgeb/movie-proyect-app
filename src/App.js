@@ -1,5 +1,4 @@
-
-import styles from "./App.module.css";
+// import styles from "./App.module.css";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { MovieDetail } from "./pages/MovieDetail";
@@ -10,13 +9,28 @@ export function App() {
     <Router>
       <header>
         <Link to="/">
-          <h1 className={styles.title}>MovieProyectAPP</h1>
+          <div class="circle"></div>
+          <h1>
+            <span>Proyect</span>
+            <br />
+            <span></span>
+            <br />
+            <span>Movie</span>
+            <br />
+            <span></span>
+            <br />
+            <span>APP</span>
+          </h1>
         </Link>
       </header>
       <main>
         <Switch>
-          <Route exact path="/movies/:movieId"><MovieDetail /></Route>
-          <Route path="/"><LandingPage /></Route>
+          <Route exact path="/movies/:movieId">
+            <MovieDetail />
+          </Route>
+          <Route path="/">
+            <LandingPage />
+          </Route>
         </Switch>
       </main>
     </Router>

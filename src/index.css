@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: rgba(122, 128, 138, 0.753);
-  color: rgb(235, 223, 208);
+  color: rgb(56, 109, 7);
 }
 
 code {
@@ -17,7 +17,13 @@ code {
 
 a {
   text-decoration: none;
-  color: rgb(235, 223, 208);;
+  color: rgb(56, 109, 7);
+}
+
+p {
+  font-size: 1.5rem;
+  color: rgb(56, 109, 7);
+  text-align: center;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Lobster);

@@ -5,5 +5,10 @@ export function LandingPage () {
     return (
     <div> 
     <Search />
-    <MoviesGrid /> </div>);
+    <div>
+        <p>encontrá Las últimas novedades del cine </p>
+    </div>
+    <MoviesGrid />
+    </div>
+    );
 }
